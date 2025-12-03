@@ -1,0 +1,70 @@
+/*
+ * ARQUIVO: backup/app/stars-animated.module.css
+ * (Este é um NOVO ARQUIVO)
+ */
+
+/* Fundo preto base */
+.starsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000; /* Fundo preto sólido */
+  overflow: hidden;
+  z-index: 0; /* Garante que está no fundo */
+}
+
+/* Animação para mover o fundo verticalmente */
+@keyframes move-stars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh); /* Move o fundo para cima */
+  }
+}
+
+/* Camada base que se move */
+.starsLayer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 200vh; /* Dobro da altura para o loop */
+  background: transparent;
+  animation: move-stars linear infinite;
+}
+
+/* * Camada 1: Estrelas pequenas.
+ * Usamos radial-gradient para desenhar estrelas em posições específicas
+ * que se repetem (background-size).
+ */
+.stars1 {
+  background-image: radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 40px 70px, #fff, transparent),
+    radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+    radial-gradient(1px 1px at 130px 80px, #fff, transparent),
+    radial-gradient(1px 1px at 160px 120px, #fff, transparent);
+  background-size: 200px 200px; /* Espaçamento da "textura" de estrelas */
+  opacity: 0.8;
+  animation-duration: 100s; /* Velocidade lenta */
+}
+
+/* Camada 2: Estrelas médias */
+.stars2 {
+  background-image: radial-gradient(2px 2px at 50px 100px, #fff, transparent),
+    radial-gradient(2px 2px at 100px 150px, #fff, transparent),
+    radial-gradient(2px 2px at 170px 130px, #fff, transparent);
+  background-size: 300px 300px;
+  opacity: 0.6;
+  animation-duration: 150s; /* Mais lento */
+}
+
+/* Camada 3: Estrelas grandes */
+.stars3 {
+  background-image: radial-gradient(3px 3px at 30px 50px, #fff, transparent),
+    radial-gradient(3px 3px at 150px 180px, #fff, transparent);
+  background-size: 400px 400px;
+  opacity: 0.4;
+  animation-duration: 200s; /* Mais lento ainda */
+}

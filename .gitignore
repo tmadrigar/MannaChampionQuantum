@@ -1,0 +1,36 @@
+# Arquivos de Ambiente - NUNCA ENVIE ISSO!
+.env
+.env.local
+.env.production
+.env.development
+
+# Banco de Dados Local - NUNCA ENVIE ISSO!
+# O schema (schema.prisma) DEVE ser enviado, mas o arquivo de dados (.db) NÃO.
+prisma/dev.db
+prisma/dev.db-journal
+
+# Dependências (serão baixadas com 'yarn install')
+node_modules/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Cache do Next.js (será gerado com 'yarn dev' ou 'yarn build')
+.next/
+
+# Cache do TypeScript
+tsconfig.tsbuildinfo
+
+# Logs do Yarn
+yarn-error.log
+yarn-debug.log
+
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar mídias locais pesadas (já que estamos usando YouTube)
+public/midia/videos/
+public/midia/thumbs/
+public/midia/

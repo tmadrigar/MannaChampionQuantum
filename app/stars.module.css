@@ -1,0 +1,55 @@
+/*
+ * Arquivo: backup/app/stars.module.css
+ * (Este é um NOVO ARQUIVO)
+ */
+
+@keyframes move-stars-layer {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh); /* Move 100% da altura da tela */
+  }
+}
+
+.starsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: black; /* Fundo preto base */
+}
+
+/* * Usamos box-shadow para criar as estrelas.
+ * Cada camada é uma div vazia com muitas "sombras" (estrelas).
+ */
+
+.starsLayer {
+  position: absolute;
+  width: 100%;
+  height: 200vh; /* O dobro da altura para o loop da animação */
+  animation: move-stars-layer linear infinite;
+}
+
+/* Estrelas pequenas e rápidas */
+.stars1 {
+  /* Gera 200 estrelas aleatoriamente */
+  box-shadow: var(--shadows-small);
+  animation-duration: 50s; /* Velocidade */
+}
+
+/* Estrelas médias */
+.stars2 {
+  /* Gera 100 estrelas aleatoriamente */
+  box-shadow: var(--shadows-medium);
+  animation-duration: 100s; /* Mais lento */
+}
+
+/* Estrelas grandes e lentas */
+.stars3 {
+  /* Gera 50 estrelas aleatoriamente */
+  box-shadow: var(--shadows-large);
+  animation-duration: 150s; /* Mais lento ainda */
+}
