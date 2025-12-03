@@ -24,7 +24,7 @@ export function FestivalPresentation() {
               O maior movimento de <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
                 ensino de Quântica no Brasil
-              </span> 🇧🇷
+              </span>
             </h2>
 
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">

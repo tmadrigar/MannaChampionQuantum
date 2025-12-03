@@ -16,7 +16,12 @@ export function Footer() {
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 w-full max-w-6xl mx-auto">
 
             {/* 1. Manna Team */}
-            <div className="relative h-12 w-auto min-w-[100px] transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+            <a 
+              href="https://manna.team" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative h-12 w-auto min-w-[100px] transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
                <Image
                  src="/logos/logo-manna.png"
                  alt="Manna Team"
@@ -24,10 +29,15 @@ export function Footer() {
                  height={70}
                  className="h-full w-auto object-contain"
                />
-            </div>
+            </a>
 
             {/* 2. UEM */}
-            <div className="relative h-14 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+            <a 
+              href="https://www.uem.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative h-14 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
               <Image
                 src="/logos/1-uem.png"
                 alt="UEM"
@@ -35,10 +45,15 @@ export function Footer() {
                 height={60}
                 className="h-full w-auto object-contain"
               />
-            </div>
+            </a>
 
             {/* 3. Fundação Araucária */}
-            <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+            <a 
+              href="https://www.fappr.pr.gov.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
               <Image
                 src="/logos/2-fundacao-araucaria.png"
                 alt="Fundação Araucária"
@@ -46,10 +61,15 @@ export function Footer() {
                 height={70}
                 className="h-full w-auto object-contain"
               />
-            </div>
+            </a>
 
             {/* 4. Governo do Paraná */}
-            <div className="relative h-14 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+            <a 
+              href="https://www.parana.pr.gov.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative h-14 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
               <Image
                 src="/logos/3-parana-governo.png"
                 alt="Governo do Estado do Paraná"
@@ -57,10 +77,15 @@ export function Footer() {
                 height={70}
                 className="h-full w-auto object-contain"
               />
-            </div>
+            </a>
 
             {/* 5. CNPq */}
-            <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+            <a 
+              href="https://www.gov.br/cnpq" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
               <Image
                 src="/logos/4-cnpq.png"
                 alt="CNPq"
@@ -68,10 +93,15 @@ export function Footer() {
                 height={70}
                 className="h-full w-auto object-contain bg-white/10 rounded px-1" 
               />
-            </div>
+            </a>
 
              {/* 6. Softex Campinas */}
-             <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+             <a 
+               href="https://softex.br" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+             >
               <Image
                 src="/logos/5-softex-campinas.png"
                 alt="Softex Campinas"
@@ -79,10 +109,15 @@ export function Footer() {
                 height={60}
                 className="h-full w-auto object-contain"
               />
-            </div>
+            </a>
 
              {/* 7. Softex */}
-             <div className="relative h-10 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+             <a 
+               href="https://softex.br" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="relative h-10 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+             >
               <Image
                 src="/logos/6-softex.png"
                 alt="Softex"
@@ -90,10 +125,15 @@ export function Footer() {
                 height={60}
                 className="h-full w-auto object-contain"
               />
-            </div>
+            </a>
 
             {/* 8. MCTI */}
-            <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+            <a 
+              href="https://www.gov.br/mcti" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
               <Image
                 src="/logos/7-mcti.png"
                 alt="MCTI"
@@ -101,10 +141,15 @@ export function Footer() {
                 height={70}
                 className="h-full w-auto object-contain"
               />
-            </div>
+            </a>
 
             {/* 9. Governo Federal */}
-            <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
+            <a 
+              href="https://www.gov.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+            >
               <Image
                 src="/logos/8-governo-federal.png"
                 alt="Governo Federal"
@@ -112,7 +157,7 @@ export function Footer() {
                 height={70}
                 className="h-full w-auto object-contain"
               />
-            </div>
+            </a>
 
           </div>
         </div>
@@ -120,7 +165,7 @@ export function Footer() {
         {/* Redes Sociais */}
         <div className="flex justify-center space-x-8 mb-12">
           <a
-            href="https://instagram.com/manna_team"
+            href="https://www.instagram.com/manna_team"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-pink-500 transition-colors transform hover:scale-110"
