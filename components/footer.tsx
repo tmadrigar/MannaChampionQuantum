@@ -18,7 +18,7 @@ export function Footer() {
             {/* 1. Manna Team */}
             <div className="relative h-12 w-auto min-w-[100px] transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
                <Image
-                 src="/logos/logo_manna.png"
+                 src="/logos/logo-manna.png"
                  alt="Manna Team"
                  width={140}
                  height={70}
@@ -29,7 +29,7 @@ export function Footer() {
             {/* 2. UEM */}
             <div className="relative h-14 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
               <Image
-                src="/logos/1 - UEM.png"
+                src="/logos/1-uem.png"
                 alt="UEM"
                 width={120}
                 height={60}
@@ -40,7 +40,7 @@ export function Footer() {
             {/* 3. Fundação Araucária */}
             <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
               <Image
-                src="/logos/2 - Fundação Araucária.png"
+                src="/logos/2-fundacao-araucaria.png"
                 alt="Fundação Araucária"
                 width={140}
                 height={70}
@@ -51,7 +51,7 @@ export function Footer() {
             {/* 4. Governo do Paraná */}
             <div className="relative h-14 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
               <Image
-                src="/logos/3 - Paraná Governo do Estado.png"
+                src="/logos/3-parana-governo.png"
                 alt="Governo do Estado do Paraná"
                 width={140}
                 height={70}
@@ -62,18 +62,18 @@ export function Footer() {
             {/* 5. CNPq */}
             <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
               <Image
-                src="/logos/4 - CNPQ.png"
+                src="/logos/4-cnpq.png"
                 alt="CNPq"
                 width={140}
                 height={70}
-                className="h-full w-auto object-contain bg-white/10 rounded px-1" // Fundo sutil apenas para dar contraste se o PNG for preto
+                className="h-full w-auto object-contain bg-white/10 rounded px-1" 
               />
             </div>
 
              {/* 6. Softex Campinas */}
              <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
               <Image
-                src="/logos/5 - Softex Núcleo Campinas.png"
+                src="/logos/5-softex-campinas.png"
                 alt="Softex Campinas"
                 width={120}
                 height={60}
@@ -84,7 +84,7 @@ export function Footer() {
              {/* 7. Softex */}
              <div className="relative h-10 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
               <Image
-                src="/logos/6 - Softex.png"
+                src="/logos/6-softex.png"
                 alt="Softex"
                 width={120}
                 height={60}
@@ -95,7 +95,7 @@ export function Footer() {
             {/* 8. MCTI */}
             <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
               <Image
-                src="/logos/7 - MCTI.png"
+                src="/logos/7-mcti.png"
                 alt="MCTI"
                 width={140}
                 height={70}
@@ -106,7 +106,7 @@ export function Footer() {
             {/* 9. Governo Federal */}
             <div className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer">
               <Image
-                src="/logos/8 - Governo Federal.png"
+                src="/logos/8-governo-federal.png"
                 alt="Governo Federal"
                 width={140}
                 height={70}

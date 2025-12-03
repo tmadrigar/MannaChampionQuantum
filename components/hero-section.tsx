@@ -21,7 +21,6 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-10"></div>
 
       {/* CAMADA 20: Elementos Decorativos (REPOSICIONADOS) */}
-      {/* Foguete, Planetas, etc... (MANTIDOS IGUAIS AO ANTERIOR) */}
       <motion.img src="/rocket.png" alt="Foguete" className="absolute bottom-20 left-[5%] w-24 md:w-32 opacity-80 z-20" initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1, x: [0, 5, 0] }} transition={{ duration: 10, delay: 1, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }} />
       <motion.img src="/planet1.png" alt="Planeta" className="absolute top-10 right-[5%] w-32 md:w-48 opacity-70 z-20" initial={{ scale: 0 }} animate={{ scale: 1, rotate: 360 }} transition={{ duration: 60, delay: 0.5, repeat: Infinity, ease: "linear" }} />
       <motion.img src="/planet2.png" alt="Planeta" className="absolute bottom-32 right-[10%] w-16 md:w-24 opacity-60 z-20" animate={{ rotate: -360 }} transition={{ duration: 50, repeat: Infinity, ease: "linear" }} />
@@ -32,9 +31,9 @@ export function HeroSection() {
 
       {/* CAMADA 30: Conteúdo Principal */}
       <div className="relative z-30 flex flex-col items-center justify-center max-w-5xl mx-auto mt-20 md:mt-0">
-        {/* Logo central */}
+        {/* Logo central - NOME DO ARQUIVO ATUALIZADO */}
         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.2 }} className="mb-8">
-          <Image src="/logos/Imagem1.png" alt="Logo Manna Champion Quantum" width={450} height={450} className="mx-auto object-contain drop-shadow-2xl" priority />
+          <Image src="/logos/logo-manna-champion.png" alt="Logo Manna Champion Quantum" width={450} height={450} className="mx-auto object-contain drop-shadow-2xl" priority />
         </motion.div>
 
         {/* BLOCO DE ESTATÍSTICAS MACRO (BIG NUMBERS) */}
