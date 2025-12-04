@@ -1,14 +1,16 @@
+'use client'
+
 import Image from 'next/image'
 import { Facebook, Instagram, Youtube, Mail } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-white/10 py-12 mt-12">
+    <footer className="bg-gray-50 border-t border-gray-200 py-12 mt-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Régua de Logos */}
         <div className="flex flex-col items-center mb-10">
-          <h3 className="text-gray-500 text-sm uppercase tracking-widest mb-8 font-medium">
+          <h3 className="text-gray-600 text-sm uppercase tracking-widest mb-8 font-medium">
             Apoio e Fomento
           </h3>
 
@@ -20,10 +22,10 @@ export function Footer() {
               href="https://manna.team" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative h-12 w-auto min-w-[100px] transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+              className="relative h-12 w-auto min-w-[100px] transition-all duration-500 hover:scale-110 cursor-pointer"
             >
                <Image
-                 src="/logos/logo-manna.png"
+                 src="/logos/manna-rodape.png"
                  alt="Manna Team"
                  width={140}
                  height={70}
@@ -36,7 +38,7 @@ export function Footer() {
               href="https://www.uem.br" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative h-14 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+              className="relative h-14 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
             >
               <Image
                 src="/logos/1-uem.png"
@@ -52,7 +54,7 @@ export function Footer() {
               href="https://www.fappr.pr.gov.br" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+              className="relative h-12 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
             >
               <Image
                 src="/logos/2-fundacao-araucaria.png"
@@ -68,7 +70,7 @@ export function Footer() {
               href="https://www.parana.pr.gov.br" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative h-14 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+              className="relative h-14 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
             >
               <Image
                 src="/logos/3-parana-governo.png"
@@ -84,14 +86,14 @@ export function Footer() {
               href="https://www.gov.br/cnpq" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+              className="relative h-12 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
             >
               <Image
                 src="/logos/4-cnpq.png"
                 alt="CNPq"
                 width={140}
                 height={70}
-                className="h-full w-auto object-contain bg-white/10 rounded px-1" 
+                className="h-full w-auto object-contain" 
               />
             </a>
 
@@ -100,7 +102,7 @@ export function Footer() {
                href="https://softex.br" 
                target="_blank" 
                rel="noopener noreferrer"
-               className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+               className="relative h-12 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
              >
               <Image
                 src="/logos/5-softex-campinas.png"
@@ -116,7 +118,7 @@ export function Footer() {
                href="https://softex.br" 
                target="_blank" 
                rel="noopener noreferrer"
-               className="relative h-10 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+               className="relative h-10 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
              >
               <Image
                 src="/logos/6-softex.png"
@@ -127,34 +129,50 @@ export function Footer() {
               />
             </a>
 
-            {/* 8. MCTI */}
+            {/* 8. NAMITEC - AUMENTADO: h-20 e width 200 */}
             <a 
-              href="https://www.gov.br/mcti" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
-            >
+               href="https://namitec.org.br" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="relative h-20 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
+             >
               <Image
-                src="/logos/7-mcti.png"
-                alt="MCTI"
-                width={140}
-                height={70}
+                src="/logos/logo-namitec.png"
+                alt="NAMITEC"
+                width={200}
+                height={100}
                 className="h-full w-auto object-contain"
               />
             </a>
 
-            {/* 9. Governo Federal */}
+            {/* 9. MCTI - AUMENTADO: h-24 e width 240 (Para ficar maior que as outras) */}
+            <a 
+              href="https://www.gov.br/mcti" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative h-12 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
+            >
+              <Image
+                src="/logos/7-mcti.png"
+                alt="MCTI"
+                width={200}
+                height={100}
+                className="h-full w-auto object-contain"
+              />
+            </a>
+
+            {/* 10. Governo Federal - AUMENTADO: h-20 e width 200 */}
             <a 
               href="https://www.gov.br" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative h-12 w-auto transition-all duration-500 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+              className="relative h-20 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
             >
               <Image
                 src="/logos/8-governo-federal.png"
                 alt="Governo Federal"
-                width={140}
-                height={70}
+                width={200}
+                height={100}
                 className="h-full w-auto object-contain"
               />
             </a>
@@ -168,7 +186,7 @@ export function Footer() {
             href="https://www.instagram.com/manna_team"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-pink-500 transition-colors transform hover:scale-110"
+            className="text-gray-600 hover:text-pink-600 transition-colors transform hover:scale-110"
             aria-label="Instagram"
           >
             <Instagram className="w-6 h-6" />
@@ -177,7 +195,7 @@ export function Footer() {
             href="https://www.facebook.com/mannateam"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-500 transition-colors transform hover:scale-110"
+            className="text-gray-600 hover:text-blue-600 transition-colors transform hover:scale-110"
             aria-label="Facebook"
           >
             <Facebook className="w-6 h-6" />
@@ -186,14 +204,14 @@ export function Footer() {
             href="https://www.youtube.com/@manna_team"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-red-500 transition-colors transform hover:scale-110"
+            className="text-gray-600 hover:text-red-600 transition-colors transform hover:scale-110"
             aria-label="YouTube"
           >
             <Youtube className="w-6 h-6" />
           </a>
           <a
             href="mailto:proj-manna@uem.br"
-            className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110"
+            className="text-gray-600 hover:text-cyan-600 transition-colors transform hover:scale-110"
             aria-label="Email"
           >
             <Mail className="w-6 h-6" />
@@ -201,14 +219,14 @@ export function Footer() {
         </div>
 
         {/* Copyright e Hashtags */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
             © 2025 Manna Quantum Festival. Todos os direitos reservados.
           </p>
           <div className="flex flex-wrap justify-center space-x-4 md:space-x-6 text-gray-500 text-xs md:text-sm">
-            <span className="hover:text-cyan-400 transition-colors cursor-default">#MannaQuantumFestival</span>
-            <span className="hover:text-pink-400 transition-colors cursor-default">#AnoInternacionalDaQuântica</span>
-            <span className="hover:text-green-400 transition-colors cursor-default">#BrasilQuântico</span>
+            <span className="hover:text-cyan-600 transition-colors cursor-default">#MannaQuantumFestival</span>
+            <span className="hover:text-pink-600 transition-colors cursor-default">#AnoInternacionalDaQuântica</span>
+            <span className="hover:text-green-600 transition-colors cursor-default">#BrasilQuântico</span>
           </div>
         </div>
       </div>

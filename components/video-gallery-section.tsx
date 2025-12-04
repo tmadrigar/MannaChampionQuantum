@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { TeamFilters } from '@/components/team-filters'
 import { TeamCard } from '@/components/team-card'
@@ -10,7 +11,6 @@ import { AlertCircle, Trophy, Target, BookOpen, Video as VideoIcon, CheckCircle2
 import type { Team, FilterOptions } from '@/lib/types'
 
 export function VideoGallerySection() {
-  // ... (Lógica interna mantida - useState, useEffect, handlers) ...
   const [allTeams, setAllTeams] = useState<Team[]>([])
   const [filteredTeams, setFilteredTeams] = useState<Team[]>([])
   const [loading, setLoading] = useState(true)
@@ -23,7 +23,7 @@ export function VideoGallerySection() {
   })
 
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 62
+  const itemsPerPage = 24
 
   useEffect(() => {
     const fetchTeams = async () => {
@@ -90,7 +90,6 @@ export function VideoGallerySection() {
   }
 
   return (
-    // Adicionado scroll-mt-24 para compensar o sticky header
     <section id="gallery" className="py-24 bg-black relative scroll-mt-24">
       {/* Fundo decorativo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
@@ -109,13 +108,20 @@ export function VideoGallerySection() {
           className="mb-24 border-b border-white/10 pb-16"
         >
           <div className="text-center mb-12">
-            <span className="inline-block py-1 px-3 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-semibold tracking-wide mb-4">
-              SUCESSO CONFIRMADO
-            </span>
-            {/* ATUALIZAÇÃO: Título no Singular */}
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Manna Champion <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Quantum 2025</span>
-            </h2>
+            {/* ITEM REMOVIDO: SUCESSO CONFIRMADO */}
+            
+            {/* LOGO MANNA CHAMPION QUANTUM */}
+            <div className="flex justify-center mb-8">
+              <div className="relative w-[400px] h-[150px] md:w-[500px] md:h-[180px]">
+                <Image 
+                  src="/logos/logo-manna-champion.png" 
+                  alt="Manna Champion Quantum" 
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
             <p className="text-xl text-gray-300 max-w-4xl mx-auto">
               A competição que desvendou o Mundo Quântico nas escolas do Brasil.
             </p>
@@ -207,7 +213,7 @@ export function VideoGallerySection() {
           </div>
         </motion.div>
 
-        {/* --- BLOCO 2: A GALERIA --- */}
+        {/* --- BLOCO 2: A GALERIA DE VÍDEOS --- */}
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center">
             <VideoIcon className="w-8 h-8 text-cyan-400 mr-3" />

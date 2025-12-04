@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Manna Theme - Fundo preto com cores vibrantes */
+    --background: 0 0% 0%; /* Preto */
+    --foreground: 0 0% 100%; /* Branco */
+
+    --card: 0 0% 10%; /* Preto suave */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Cyan (cor principal do logo Quantum) */
+    --primary: 186 100% 50%; /* #00BFFF */
+    --primary-foreground: 0 0% 0%;
+
+    /* Laranja (cor accent do logo) */
+    --secondary: 30 100% 50%; /* #FF9500 */
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    /* Rosa (cor accent do logo) */
+    --accent: 330 100% 60%; /* #FF33AA */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 186 100% 50%;
+
+    --radius: 0.75rem;
+    
+    /* Cores adicionais da identidade Manna */
+    --manna-cyan: 186 100% 50%; /* #00BFFF */
+    --manna-orange: 30 100% 50%; /* #FF9500 */
+    --manna-pink: 330 100% 60%; /* #FF33AA */
+    --manna-green: 120 100% 50%; /* #00FF00 */
+  }
+
+  /* Estilos base do body, html, etc. */
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth transitions for interactive elements */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Gradient text effect - Manna colors */
+.gradient-text {
+  background: linear-gradient(135deg, #00BFFF, #FF33AA, #00FF00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar - Manna theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00BFFF, #FF9500, #FF33AA);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #00D4FF, #FFB020, #FF55CC);
+}
+
+/*
+ * ========================================
+ * FIM DO ARQUIVO
+ * (Todo o código das estrelas animadas foi removido)
+ * ========================================
+ */
