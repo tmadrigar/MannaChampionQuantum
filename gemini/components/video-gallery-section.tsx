@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image' // Import adicionado
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { TeamFilters } from '@/components/team-filters'
 import { TeamCard } from '@/components/team-card'
@@ -108,9 +108,7 @@ export function VideoGallerySection() {
           className="mb-24 border-b border-white/10 pb-16"
         >
           <div className="text-center mb-12">
-            <span className="inline-block py-1 px-3 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm font-semibold tracking-wide mb-6">
-              SUCESSO CONFIRMADO
-            </span>
+            {/* ITEM REMOVIDO: SUCESSO CONFIRMADO */}
             
             {/* LOGO MANNA CHAMPION QUANTUM */}
             <div className="flex justify-center mb-8">
@@ -215,7 +213,7 @@ export function VideoGallerySection() {
           </div>
         </motion.div>
 
-        {/* --- BLOCO 2: A GALERIA --- */}
+        {/* --- BLOCO 2: A GALERIA DE VÍDEOS --- */}
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center">
             <VideoIcon className="w-8 h-8 text-cyan-400 mr-3" />

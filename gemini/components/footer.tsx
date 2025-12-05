@@ -150,13 +150,13 @@ export function Footer() {
               href="https://www.gov.br/mcti" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative h-24 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
+              className="relative h-12 w-auto transition-all duration-500 hover:scale-110 cursor-pointer"
             >
               <Image
                 src="/logos/7-mcti.png"
                 alt="MCTI"
-                width={240}
-                height={120}
+                width={200}
+                height={100}
                 className="h-full w-auto object-contain"
               />
             </a>

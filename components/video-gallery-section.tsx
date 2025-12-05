@@ -7,7 +7,19 @@ import { TeamFilters } from '@/components/team-filters'
 import { TeamCard } from '@/components/team-card'
 import { Button } from '@/components/ui/button'
 import { LoadingSpinner } from '@/components/loading-spinner'
-import { AlertCircle, Trophy, Target, BookOpen, Video as VideoIcon, CheckCircle2, Banknote, Clapperboard } from 'lucide-react'
+import { 
+  AlertCircle, 
+  Trophy, 
+  Target, 
+  BookOpen, 
+  Video as VideoIcon, 
+  CheckCircle2, 
+  Lightbulb, 
+  Box,
+  Users,
+  Clock,
+  FileCheck
+} from 'lucide-react'
 import type { Team, FilterOptions } from '@/lib/types'
 
 export function VideoGallerySection() {
@@ -25,6 +37,7 @@ export function VideoGallerySection() {
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 24
 
+  // ... (Manter useEffects de fetch e filtros inalterados) ...
   useEffect(() => {
     const fetchTeams = async () => {
       try {
@@ -108,7 +121,6 @@ export function VideoGallerySection() {
           className="mb-24 border-b border-white/10 pb-16"
         >
           <div className="text-center mb-12">
-            {/* ITEM REMOVIDO: SUCESSO CONFIRMADO */}
             
             {/* LOGO MANNA CHAMPION QUANTUM */}
             <div className="flex justify-center mb-8">
@@ -150,70 +162,105 @@ export function VideoGallerySection() {
                 </ul>
               </div>
 
+              {/* DUAS MODALIDADES DETALHADAS */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                   <div className="flex items-center mb-2 text-cyan-300">
-                     <Clapperboard className="w-5 h-5 mr-2" />
-                     <span className="font-bold">2 Modalidades</span>
+                <div className="bg-gray-900/60 p-5 rounded-xl border border-cyan-500/30 hover:border-cyan-500/50 transition-all group">
+                   <div className="flex items-center mb-3 text-cyan-400">
+                     <Lightbulb className="w-6 h-6 mr-2 group-hover:scale-110 transition-transform" />
+                     <span className="font-bold text-lg">Pitch Conceitual</span>
                    </div>
-                   <p className="text-sm text-gray-400">
-                     As equipes produziram vídeos pitchs em dois formatos distintos, demonstrando poder de síntese e criatividade.
+                   <p className="text-sm text-gray-400 leading-relaxed">
+                     Desafio de <strong>transposição didática</strong>. As equipes explicaram fenômenos quânticos complexos de forma acessível e criativa.
                    </p>
                 </div>
-                <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                   <div className="flex items-center mb-2 text-green-400">
-                     <Banknote className="w-5 h-5 mr-2" />
-                     <span className="font-bold">Premiação em Dinheiro</span>
+
+                <div className="bg-gray-900/60 p-5 rounded-xl border border-purple-500/30 hover:border-purple-500/50 transition-all group">
+                   <div className="flex items-center mb-3 text-purple-400">
+                     <Box className="w-6 h-6 mr-2 group-hover:scale-110 transition-transform" />
+                     <span className="font-bold text-lg">Pitch de Artefatos</span>
                    </div>
-                   <p className="text-sm text-gray-400">
-                     Como reconhecimento à excelência, o festival distribuiu premiações em dinheiro para os projetos de destaque.
+                   <p className="text-sm text-gray-400 leading-relaxed">
+                     Foco na <strong>aplicação prática</strong>. Desenvolvimento de protótipos inéditos que utilizam ou simulam princípios quânticos.
                    </p>
                 </div>
               </div>
+
             </div>
 
-            <div className="bg-gray-900/50 rounded-3xl p-8 border border-white/10 h-full flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+            {/* --- COLUNA DA DIREITA: ESTATÍSTICAS REORGANIZADAS --- */}
+            <div className="bg-gray-900/50 rounded-3xl p-8 border border-white/10 h-full flex flex-col">
+              <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
                 <CheckCircle2 className="w-6 h-6 text-green-400 mr-3" />
                 Rigor na Avaliação
               </h3>
-              <div className="space-y-8">
-                <div>
-                  <div className="flex justify-between items-end mb-2">
-                    <span className="text-gray-400">Equipes Avaliadas</span>
-                    <span className="text-2xl font-bold text-white">113</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-cyan-500 h-2 rounded-full" style={{ width: '100%' }}></div>
+              
+              <div className="space-y-8 flex-grow">
+                
+                {/* 1. O NÚMERO DE DESTAQUE (TOTAL) */}
+                <div className="bg-gray-800/50 p-6 rounded-2xl border border-white/5 text-center relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-pink-500/10 rounded-full blur-xl"></div>
+                  <div className="relative z-10">
+                    <span className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
+                      1.356
+                    </span>
+                    <p className="text-gray-300 font-medium mt-2 flex items-center justify-center">
+                      <FileCheck className="w-4 h-4 mr-2 text-pink-400"/>
+                      Avaliações Individuais Realizadas
+                    </p>
                   </div>
                 </div>
 
-                <div>
-                  <div className="flex justify-between items-end mb-2">
-                    <span className="text-gray-400">Total de Avaliações</span>
-                    <span className="text-2xl font-bold text-white">1.356</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-pink-500 h-2 rounded-full" style={{ width: '100%' }}></div>
-                  </div>
-                  <p className="text-xs text-gray-500 mt-1">Realizadas por 12 avaliadores especialistas</p>
+                {/* 2. O TEMPO (A CONSEQUÊNCIA) */}
+                <div className="flex items-center justify-between p-4 rounded-xl bg-gray-800/30 border border-white/5">
+                   <div>
+                      <p className="text-3xl font-bold text-orange-400">+225</p>
+                      <p className="text-sm text-gray-400">Horas de Dedicação</p>
+                   </div>
+                   <div className="h-10 w-px bg-white/10 mx-4"></div>
+                   <div className="text-right">
+                      <p className="text-lg font-bold text-white flex items-center justify-end">
+                        ~10 min
+                        <Clock className="w-4 h-4 ml-2 text-orange-400"/>
+                      </p>
+                      <p className="text-xs text-gray-500">Média por avaliação (Vídeo + Análise)</p>
+                   </div>
                 </div>
 
-                <div className="pt-6 border-t border-white/10">
-                   <p className="text-lg text-white">
-                     <span className="text-4xl font-bold text-orange-400 mr-2">+225</span>
-                     Horas de dedicação
-                   </p>
-                   <p className="text-sm text-gray-400 mt-2">
-                     A banca dedicou mais de 225 horas assistindo e reavaliando os vídeos, garantindo um julgamento justo e criterioso.
-                   </p>
+                {/* 3. O DETALHAMENTO (COMO CHEGAMOS LÁ) */}
+                <div className="space-y-4 pt-4 border-t border-white/10">
+                  <p className="text-sm text-gray-400 mb-2">Estrutura da Banca:</p>
+                  
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-gray-800/30 p-3 rounded-lg border border-white/5">
+                      <div className="flex items-center mb-1">
+                        <Users className="w-4 h-4 text-cyan-400 mr-2"/>
+                        <span className="text-xl font-bold text-white">12</span>
+                      </div>
+                      <p className="text-xs text-gray-500">Especialistas Avaliadores</p>
+                    </div>
+
+                    <div className="bg-gray-800/30 p-3 rounded-lg border border-white/5">
+                      <div className="flex items-center mb-1">
+                        <VideoIcon className="w-4 h-4 text-cyan-400 mr-2"/>
+                        <span className="text-xl font-bold text-white">113</span>
+                      </div>
+                      <p className="text-xs text-gray-500">Equipes avaliadas por cada membro</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-xs text-gray-500 italic mt-2 text-center">
+                    * Cada equipe foi avaliada individualmente por todos os 12 membros da banca.
+                  </p>
                 </div>
+
               </div>
             </div>
+
           </div>
         </motion.div>
 
         {/* --- BLOCO 2: A GALERIA DE VÍDEOS --- */}
+        {/* ... (Manter código da galeria inalterado) ... */}
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center">
             <VideoIcon className="w-8 h-8 text-cyan-400 mr-3" />
