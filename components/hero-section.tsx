@@ -65,7 +65,7 @@ export function HeroSection() {
         >
           {/* 1. Estudantes */}
           <div className="text-center flex-1 min-w-[150px] md:min-w-[180px]">
-            <span className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent block mb-2 drop-shadow-[0_2px_10px_rgba(34,211,238,0.3)]">3.280</span>
+            <span className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent block mb-2 drop-shadow-[0_2px_10px_rgba(34,211,238,0.3)]">3.000</span>
             <p className="text-gray-200 text-sm md:text-base uppercase tracking-widest font-bold">Estudantes Participantes</p>
           </div>
 

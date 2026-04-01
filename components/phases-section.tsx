@@ -91,7 +91,7 @@ export function PhasesSection() {
               <li className="flex items-start">
                 <Users className="w-5 h-5 text-pink-400 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <span className="block text-white font-bold text-lg">3.280 Estudantes</span>
+                  <span className="block text-white font-bold text-lg">3.000 Estudantes</span>
                   <span className="text-gray-400 text-sm">Impacto Direto</span>
                 </div>
               </li>

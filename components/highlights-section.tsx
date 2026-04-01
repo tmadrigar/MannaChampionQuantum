@@ -38,7 +38,7 @@ export function HighlightsSection() {
           >
             <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity"><Users className="w-16 h-16 text-white" /></div>
             <h3 className="text-gray-400 font-medium mb-2 uppercase tracking-wider">Impacto Direto</h3>
-            <div className="text-5xl md:text-7xl font-bold text-white mb-2">3.280</div>
+            <div className="text-5xl md:text-7xl font-bold text-white mb-2">3.000</div>
             <p className="text-cyan-400 font-semibold text-lg">Estudantes Participantes</p>
             <p className="text-gray-500 text-sm mt-2">Engajados em bootcamps e atividades práticas.</p>
           </motion.div>
