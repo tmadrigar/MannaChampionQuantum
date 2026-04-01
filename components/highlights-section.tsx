@@ -69,7 +69,7 @@ export function HighlightsSection() {
           >
             <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-30 transition-opacity"><UserCheck className="w-12 h-12 text-orange-400" /></div>
             <div>
-              <div className="text-4xl font-bold text-white mb-1">104</div>
+              <div className="text-4xl font-bold text-white mb-1">103</div>
               <div className="text-orange-400 font-semibold">Professores Residentes</div>
               <p className="text-gray-500 text-xs mt-1">Educadores capacitados em todo o país.</p>
             </div>
@@ -85,7 +85,7 @@ export function HighlightsSection() {
           >
             <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-30 transition-opacity"><School className="w-12 h-12 text-green-400" /></div>
             <div>
-              <div className="text-3xl font-bold text-white mb-1">91</div>
+              <div className="text-3xl font-bold text-white mb-1">106</div>
               <div className="text-green-400 font-semibold text-sm">Instituições de Ensino</div>
               <p className="text-gray-500 text-xs mt-1">Colégios, escolas e instituições públicas.</p>
             </div>
@@ -101,7 +101,7 @@ export function HighlightsSection() {
           >
             <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-30 transition-opacity"><MapPin className="w-12 h-12 text-blue-400" /></div>
             <div>
-              <div className="text-3xl font-bold text-white mb-1">60</div>
+              <div className="text-3xl font-bold text-white mb-1">59</div>
               <div className="text-blue-400 font-semibold text-sm">Cidades Alcançadas</div>
               <p className="text-gray-500 text-xs mt-1">Com forte atuação no interior do Brasil.</p>
             </div>

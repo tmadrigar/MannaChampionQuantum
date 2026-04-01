@@ -218,7 +218,7 @@ export function ImpactMapSection() {
             Impacto <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-400">Geográfico</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            O Manna Quantum Festival impactou <strong className="text-cyan-400 text-2xl">60 municípios</strong> em <strong className="text-green-400 text-2xl">18 estados</strong> do Brasil, levando a ciência quântica a escolas públicas e institutos federais.
+            O Manna Quantum Festival impactou <strong className="text-cyan-400 text-2xl">59 municípios</strong> em <strong className="text-green-400 text-2xl">18 estados</strong> do Brasil, levando a ciência quântica a escolas públicas e institutos federais.
           </p>
         </motion.div>
 

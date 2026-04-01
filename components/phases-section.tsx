@@ -99,8 +99,8 @@ export function PhasesSection() {
               <li className="flex items-start">
                 <School className="w-5 h-5 text-pink-400 mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <span className="block text-white font-bold text-lg">91 Instituições</span>
-                  <span className="text-gray-400 text-sm">Envolvidas (60 Cidades / 18 UFs)</span>
+                  <span className="block text-white font-bold text-lg">106 Instituições</span>
+                  <span className="text-gray-400 text-sm">Envolvidas (59 Cidades / 18 UFs)</span>
                 </div>
               </li>
 
